@@ -1,0 +1,32 @@
+.shake-on-hover:hover {
+    position: relative;
+    animation-name: swing;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* アニメーション完了後、最終状態を保持 */
+}
+
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% { /* 少し右へ */
+        transform: translateX(2px);
+    }
+
+    40% { /* 少し左へ (0%地点から見て) */
+        transform: translateX(-2px);
+    }
+
+    60% {
+        transform: translateX(2px);
+    }
+
+    80% {
+        transform: translateX(-2px);
+    }
+
+}

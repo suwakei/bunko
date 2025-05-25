@@ -8,6 +8,18 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        swing: {
+          "0%, 100%": {trasform: "translateX(0)"},
+          "20%": {trasform: "translateX(2x)"},
+          "40%": {trasform: "translateX(-2x)"},
+          "60%": {trasform: "translateX(2x)"},
+          "80%": {trasform: "translateX(-2x)"},
+        }
+      },
+      animation: {
+        swing: "swing 1s ease-in-out infinite",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
