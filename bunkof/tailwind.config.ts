@@ -10,15 +10,15 @@ export default {
     extend: {
       keyframes: {
         swing: {
-          "0%, 100%": {trasform: "translateX(0)"},
-          "20%": {trasform: "translateX(2x)"},
-          "40%": {trasform: "translateX(-2x)"},
-          "60%": {trasform: "translateX(2x)"},
-          "80%": {trasform: "translateX(-2x)"},
+          "0%, 100%": {transform: "translateX(0)"},
+          "20%": {transform: "translateX(2px)"},
+          "40%": {transform: "translateX(-2px)"},
+          "60%": {transform: "translateX(2px)"},
+          "80%": {transform: "translateX(-2px)"},
         }
       },
       animation: {
-        swing: "swing 1s ease-in-out infinite",
+        swing: "swing 0.5s ease-in-out",
       },
       colors: {
         background: "var(--background)",
