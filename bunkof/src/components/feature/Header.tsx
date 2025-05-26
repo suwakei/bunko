@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BellIconButton } from "@/components/ui/Button/BellIconButton";
 import { ProfileIconButton } from "@/components/ui/Button/ProfileIconButton"
+import { CreateNewButton } from "@/components/ui/Button/CreateNewButton";
 
 
 
@@ -39,7 +40,7 @@ return (
         <Link
             href="/create" // 新規作成ページのパス（仮）
         >
-            新規作成
+            <CreateNewButton />
         </Link>
         </nav>
     </div>
