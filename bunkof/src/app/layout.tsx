@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Page Maker - あなたの作品を美しくページ化",
+  title: "サクペジ - あなたの作品を美しくページ化",
   description: "書いた作品をいろいろな形式でページ化してダウンロードできます。",
   keywords: [
     "小説",
