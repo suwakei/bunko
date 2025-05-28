@@ -5,12 +5,12 @@ import Link from "next/link";
 import {LoginButton} from "@/components/ui/Button/LoginButton"
 import { SignUpButton } from "@/components/ui/Button/SignUpButton";
 
+
 type HideProps = {
     isActive: boolean;
 }
 
-
-const RootHeader: React.FC<HideProps> = () => {
+const RootHeader = () => {
 return (
     <header className="bg-background/75 backdrop-blur-lg border-b border-border/40">
         <div className="flex px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ return (
             <nav className="flex items-center">
                 {/* ログインボタン */}
                 <Link
-                    href="/login" // ログインページのパス（仮）
+                    href="/login/" // ログインページのパス（仮）
                 >
                     <LoginButton />
                 </Link>

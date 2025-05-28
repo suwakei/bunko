@@ -6,13 +6,16 @@ import { CreateNewPageButton } from "@/components/ui/Button/CreateNewPageButton"
 import { Tooltip } from "@/components/common/ToolTip";
 
 
+type HideProps = {
+    isActive: boolean;
+}
 
-export default function CommonHeader() {
+const CommonHeader: React.FC<HideProps> = () => {
 return (
     <header className="bg-background/75 backdrop-blur-lg sticky top-0 z-50 w-full border-b border-border/40">
     <div className="w-full flex h-16 items-center px-4 sm:px-6 lg:px-8">
             {/* 左側のロゴ */}
-            <Link href="/Home" className="mr-auto flex items-center gap-2">
+            <Link href="/users/[userId]" className="mr-auto flex items-center gap-2">
             <Image
                 src="/logo.svg"
                 alt="sakupage Logo"
@@ -52,3 +55,5 @@ return (
     </header>
 );
 }
+
+export default CommonHeader;
