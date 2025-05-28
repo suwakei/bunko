@@ -1,0 +1,15 @@
+.headerAnimated {
+  /* スムーズな変化のためのトランジション */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.headerAnimated.active { /* または .headerVisible など、より具体的な名前も良いでしょう */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.headerAnimated.inactive { /* または .headerHidden など */
+  opacity: 0;
+  transform: translateY(-100%); /* ヘッダーの高さ分だけ上にスライド */
+  pointer-events: none; /* 消えている間は操作できないようにする */
+}
