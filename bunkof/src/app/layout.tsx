@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "サクペジ - あなたの作品を美しくページ化",
@@ -35,16 +24,16 @@ export const metadata: Metadata = {
   },
   // OpenGraph設定
   openGraph: {
-  title: "Page Maker - あなたの作品を美しくページ化",
+  title: "サクペジ - あなたの作品を美しくページ化",
   description: "書いた作品をEPUBやPDFなど、様々な形式で簡単にダウンロードできます。",
   url: "", // アプリケーションのURL
-  siteName: "Page Maker",
+  siteName: "サクペジ",
   images: [
     {
       url: "", // OGP画像のURL
       width: 1200,
       height: 630,
-      alt: "Page Makerのロゴ",
+      alt: "サクペジロゴ",
     },
   ],
   locale: "ja_JP",
@@ -53,9 +42,9 @@ export const metadata: Metadata = {
 // Twitterカード設定
   twitter: {
     card: "summary_large_image",
-    title: "Page Maker - あなたの作品を美しくページ化",
+    title: "サクペジ - あなたの作品を美しくページ化",
     description: "書いた作品をいろいろな形式でページ化してダウンロードできます。",
-    // creator: "@yourTwitterHandle", // あなたのTwitterハンドルに置き換えてください
+    creator: "@yourTwitterHandle", // あなたのTwitterハンドルに置き換えてください
     images: ["https://example.com/twitter-image.png"], // Twitterカード画像のURLに置き換えてください
   },
   // アイコン設定の例 (favicon.icoがappディレクトリ直下にあれば自動で認識されますが、明示も可能です)
@@ -71,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>
