@@ -1,7 +1,7 @@
 {
-    "name": "sakupageF",
+    "name": "sakupageF Devcontainer",
     "dockerComposeFile": [
-        "../sakupageF/docker-compose.yml"
+        "../docker-compose.yml"
     ],
     "service": "sakupageF",
     "workSpaceFolder": "/sakupageF",
