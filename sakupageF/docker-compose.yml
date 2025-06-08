@@ -10,5 +10,5 @@ services:
     ports:
     - 3000:3000
     volumes:
-    - .:sakupageF
-    command: npm run dev
+    - .:/sakupageF  # ホストのカレントディレクトリをコンテナの/sakupageFにマウント
+    - /sakupageF/node_modules # コンテナ内のnode_modulesがホストのもので上書きされないようにする

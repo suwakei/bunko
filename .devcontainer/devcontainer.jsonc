@@ -1,0 +1,28 @@
+{
+    "name": "sakupageF",
+    "dockerComposeFile": [
+        "../sakupageF/docker-compose.yml"
+    ],
+    "service": "sakupageF",
+    "workSpaceFolder": "/sakupageF",
+    //  ポートフォワーディングの設定。docker-compose.yml と一致させる
+    "forwardPorts": [3000],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "google.geminicodeassist",
+                "eamodio.gitlens",
+                "oderwat.indent-rainbow",
+                "christian-kohler.path-intellisense",
+                "mosapride.zenkaku",
+                "ms-azuretools.vscode-docker",
+                "formulahendry.auto-rename-tag",
+                "esbenp.prettier-vscode",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "dsznajder.es7-react-js-snippets",
+                "PulkitGangwar.nextjs-snippets"
+            ]
+        }
+    },
+    "remoteUser": "appuser"
+}

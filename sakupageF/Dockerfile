@@ -1,12 +1,18 @@
 FROM node:24-alpine
 
+RUN addgroup -S sakupagegroup && adduser -S sakupageuser -G sakupagegroup
+
 WORKDIR /sakupageF
 
-COPY package*.json ./
+RUN chown sakupageuser:sakupagegroup /sakupageF
+
+COPY --chown=sakupageuser:sakupagegroup package*.json ./
+
+USER sakupageuser
 
 RUN npm install
 
-COPY . .
+COPY --chown=sakupageuser:sakupagegroup . .
 
 EXPOSE 3000
 

@@ -1,6 +1,0 @@
-{
-    "name": "sakupageF",
-    "build": {
-        "dockerfile": "Dockerfile"
-    }
-}
